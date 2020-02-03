@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import "./App.css";
+import "./App.mobile.css";
 
 const App: FC = () => {
   return (

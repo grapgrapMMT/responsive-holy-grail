@@ -1,0 +1,14 @@
+@media screen and (max-width: 900px) {
+  .nav {
+    flex: 0 0 100%;
+  }
+  .section {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aside {
+    display: none;
+  }
+}
