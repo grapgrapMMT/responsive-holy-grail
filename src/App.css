@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+@import url("./reset.css");
+
+html,
+body,
+#root {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
   flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
+  padding: 1rem;
+  background-color: #9e9e9e;
+}
+
+.title {
+  margin-right: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 200px;
+  background-color: #bdbdbd;
+}
+
+.nav-item {
+  padding: 1rem 0;
+}
+
+.nav-item + .nav-item {
+  border-top: 1px solid #000000;
+}
+
+.contents {
+  flex: 1 1 auto;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+.section {
+  padding: 1rem 0 0 1rem;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 200px;
+  padding: 1rem;
+}
+
+.aside-item {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/cherry.jpg");
+  color: #ffffff;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.image {
+  width: 100%;
+  max-height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  height: 150px;
+  background-color: #fafafa;
 }
